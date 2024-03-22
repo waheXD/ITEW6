@@ -17,7 +17,7 @@
     <div class="product-list">
       <div v-for="product in products" :key="product.id" class="product">
         <div v-if="product.id !== editingProductId">
-          <img src="./assets/a.jpg" alt="PRODUCT PICTURE">
+          <img src=ITEW6/src/assets/a.jpg alt="PRODUCT PICTURE">
           <p>{{ product.name }} - ₱ {{ product.price }}</p>
           Qnty: <input type="number" v-model="product.quantityToAdd" min="1" step="1">
           <button @click="editProduct(product)">Edit</button>
